@@ -96,7 +96,11 @@ Dumper::print(new class {
 class A { function foo() { echo "A();\n"; } }
 class B extends A { function foo() { echo "B();\n"; } }
 
+include 'friend.php';
 
+echo friends\sqr(12);
+
+echo \utils\MYCONST;
 
 /*
 $user = new User("user12", "thFG5");
